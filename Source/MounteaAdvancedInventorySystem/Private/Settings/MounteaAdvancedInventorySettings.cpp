@@ -12,8 +12,6 @@
 
 #include "Settings/MounteaAdvancedInventorySettings.h"
 
-#include "Settings/MounteaAdvancedInventorySettingsConfig.h"
-
 UMounteaAdvancedInventorySettings::UMounteaAdvancedInventorySettings() : InventorySettingsConfig(nullptr),
 																		 LogVerbosity(14)
 {

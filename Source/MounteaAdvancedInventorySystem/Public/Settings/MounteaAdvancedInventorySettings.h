@@ -12,14 +12,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Settings/MounteaAdvancedEquipmentSettingsConfig.h"
+#include "Settings/MounteaAdvancedInventorySettingsConfig.h"
 #include "Definitions/MounteaInventoryBaseDataTypes.h"
 #include "Engine/DeveloperSettings.h"
 #include "Logs/MounteaAdvancedInventorySystemLogTypes.h"
 #include "MounteaAdvancedInventorySettings.generated.h"
 
-class UMounteaAdvancedEquipmentSettingsConfig;
 class UInputMappingContext;
-class UMounteaAdvancedInventorySettingsConfig;
 
 /**
  * UMounteaAdvancedInventorySettings provides centralized configuration for the Mountea Advanced Inventory System.

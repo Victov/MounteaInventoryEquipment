@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2025 Dominik (Pavlicek) Morse. All rights reserved.
+// Copyright (C) 2025 Dominik (Pavlicek) Morse. All rights reserved.
 //
 // Developed for the Mountea Framework as a free tool. This solution is provided
 // for use and sharing without charge. Redistribution is allowed under the following conditions:
@@ -11,7 +11,7 @@
 
 
 #include "Components/MounteaAttachmentContainerComponent.h"
-
+#include "Components/MounteaAttachableComponent.h"
 #include "Algo/ForEach.h"
 #include "Definitions/MounteaAdvancedAttachmentSlot.h"
 #include "Definitions/MounteaEquipmentBaseEnums.h"
@@ -237,7 +237,7 @@ FName UMounteaAttachmentContainerComponent::GetSlotIdForAttachable_Implementatio
 	const auto* Found = Algo::FindByPredicate(AttachmentSlots,
 		[&](const UMounteaAdvancedAttachmentSlot* Slot)
 		{
-			return Slot != nullptr && Slot->IsOccupied() && Slot->Attachment == Attachable;
+			return Slot != nullptr && Slot->IsOccupied() && Slot->Attachment.Get() == Attachable;
 		});
 
 	return Found ? (*Found)->SlotName : NAME_None;	

@@ -5,7 +5,7 @@ public class MounteaAdvancedInventorySystemDeveloper : ModuleRules
 	public MounteaAdvancedInventorySystemDeveloper(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		CppStandard = CppStandardVersion.Cpp17;
+		CppStandard = CppStandardVersion.Cpp20;
 
 		PublicDependencyModuleNames.AddRange(
 			new string[]
