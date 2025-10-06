@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2025 Dominik (Pavlicek) Morse. All rights reserved.
+// Copyright (C) 2025 Dominik (Pavlicek) Morse. All rights reserved.
 //
 // Developed for the Mountea Framework as a free tool. This solution is provided
 // for use and sharing without charge. Redistribution is allowed under the following conditions:
@@ -9,9 +9,13 @@
 //
 // For more information, visit: https://mountea.tools
 
-#include <Commands/FMAISCommands.h>
+#include "Commands/FMAISCommands.h"
+
+#define LOCTEXT_NAMESPACE "MAISCommands"
 
 void FMAISCommands::RegisterCommands()
 {
-	
+	UI_COMMAND(PluginAction, "Plugin", "Plugin Action", EUserInterfaceActionType::Button, FInputChord());
 }
+
+#undef LOCTEXT_NAMESPACE
